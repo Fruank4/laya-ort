@@ -31,7 +31,7 @@ dev = [
 laya-ort = "laya_ort.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/NandhaKishorM/laya"
+Homepage = "https://github.com/Fruank4/laya-ort"
 
 [build-system]
 requires = ["setuptools>=68"]
