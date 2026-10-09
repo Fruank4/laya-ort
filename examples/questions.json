@@ -1,0 +1,20 @@
+{
+  "department": {
+    "type": "choice",
+    "instructions": "Which department should handle this?",
+    "criteria": {
+      "billing": "invoices, payments, refunds",
+      "technical": "bugs, outages, system errors",
+      "other": "everything else"
+    }
+  },
+  "urgency": {
+    "type": "score",
+    "instructions": "How urgent is this?",
+    "criteria": ["not urgent", "soon", "blocking"]
+  },
+  "churn_risk": {
+    "type": "noul",
+    "instructions": "Does the user threaten to cancel or leave?"
+  }
+}

@@ -1,0 +1,44 @@
+[project]
+name = "laya-ort"
+version = "0.1.0"
+description = "Laya typed-decision inference on Linux x86_64 via ONNX Runtime CPU"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [{name = "laya-ort"}]
+keywords = ["laya", "onnxruntime", "decision"]
+classifiers = [
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "huggingface_hub>=0.26",
+    "numpy>=1.26",
+    "onnxruntime>=1.18",
+    "tokenizers>=0.20",
+]
+
+[project.optional-dependencies]
+dev = [
+    "onnx>=1.16",
+    "pytest>=8",
+]
+
+[project.scripts]
+laya-ort = "laya_ort.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/NandhaKishorM/laya"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
