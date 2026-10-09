@@ -1,6 +1,6 @@
 [project]
 name = "laya-ort"
-version = "0.1.0"
+version = "1.0.0"
 description = "Laya typed-decision inference on Linux x86_64 via ONNX Runtime CPU"
 readme = "README.md"
 requires-python = ">=3.10"
