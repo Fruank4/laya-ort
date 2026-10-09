@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="168" viewBox="0 0 720 168" fill="none">
+  <circle cx="84" cy="84" r="48" stroke="#2563EB" stroke-width="7"/>
+  <circle cx="66" cy="72" r="7" fill="#2563EB"/>
+  <circle cx="102" cy="72" r="7" fill="#2563EB"/>
+  <circle cx="84" cy="104" r="7" fill="#2563EB"/>
+  <path d="M66 72 L102 72 L84 104 Z" stroke="#2563EB" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="156" y="86" fill="#0F172A" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="58" font-weight="700">laya-ort</text>
+  <text x="160" y="122" fill="#64748B" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" letter-spacing="3.2">TYPED DECISIONS ON CPU</text>
+</svg>
