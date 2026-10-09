@@ -18,8 +18,6 @@
 
 **面向 Linux x86_64 的类型化决策。** [Laya](https://github.com/NandhaKishorM/laya) 在一次前向里给调用方当场给出的选项打分，不生成文字。本仓库用 ONNX Runtime 的 CPU 跑这个决策，Intel 和 AMD 走同一条路径。Python 负责拼题、分词和校准。
 
-分层对齐 [laya-mlx](https://github.com/mizorewww/laya-mlx)：一层小的 Python 运行时，后面接一个本地计算后端。这里的后端是 ONNX，不是 MLX。训练、HTTP 和苹果芯片不在这一版里。
-
 ```text
 状态 + 题目 → Router → 每题一条序列 → ONNX Runtime CPU → 概率
 ```
@@ -242,6 +240,16 @@ python -m venv .venv
 
 邮件清理、长文档扫描、HTTP、MCP、预测钩子、RLCD 微调和完整评测集还没有。置信度是校准后的最大概率，并不表示这题一定正确。
 
+## 星标历史
+
+<a href="https://www.star-history.com/#Fruank4/laya-ort&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Fruank4/laya-ort&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Fruank4/laya-ort&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Fruank4/laya-ort&type=Date" />
+ </picture>
+</a>
+
 ## 许可
 
-[Apache-2.0](LICENSE)。序列构造、温度分桶和语言检测改编自 [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) 与 [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx)，详见 [NOTICE](NOTICE)。权重属于 Convai Innovations，不在本仓库中。
+[Apache-2.0](LICENSE)。序列构造、温度分桶和语言检测遵循 [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya)，详见 [NOTICE](NOTICE)。权重属于 Convai Innovations，不在本仓库中。

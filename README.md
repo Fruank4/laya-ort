@@ -18,8 +18,6 @@
 
 **Typed decisions for Linux x86_64.** [Laya](https://github.com/NandhaKishorM/laya) scores the options you supply in one forward pass and does not generate text. This repository runs that decision on ONNX Runtime's CPU, for Intel and AMD machines. Python builds the question, tokenizes it, and calibrates the probabilities.
 
-The layout follows [laya-mlx](https://github.com/mizorewww/laya-mlx): a small Python runtime in front of a native compute backend. Here the backend is ONNX instead of MLX. Training, HTTP, and Apple Silicon are outside this release.
-
 ```text
 state + questions → Router → one sequence per question → ONNX Runtime CPU → probabilities
 ```
@@ -242,6 +240,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for pull requests and [SECURITY.md](SECUR
 
 Email cleaning, long-document scans, HTTP, MCP, prediction hooks, RLCD fine-tuning, and a full evaluation suite are not included. Confidence is a calibrated max probability. It does not mean the answer is certainly correct.
 
+## Star History
+
+<a href="https://www.star-history.com/#Fruank4/laya-ort&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Fruank4/laya-ort&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Fruank4/laya-ort&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Fruank4/laya-ort&type=Date" />
+ </picture>
+</a>
+
 ## License
 
-[Apache-2.0](LICENSE). Sequence construction, temperature buckets, and language detection are adapted from [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) and [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx). See [NOTICE](NOTICE). The weights belong to Convai Innovations and are not in this repository.
+[Apache-2.0](LICENSE). Sequence construction, temperature buckets, and language detection follow [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya). See [NOTICE](NOTICE). The weights belong to Convai Innovations and are not in this repository.

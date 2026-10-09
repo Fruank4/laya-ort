@@ -1,6 +1,6 @@
 laya-ort adapts prompt construction, calibration, and the typed-decision
 result schema from NandhaKishorM/laya (Apache-2.0, Convai Innovations and
-contributors) and from the inference-only layout of mizorewww/laya-mlx.
+contributors).
 
 The neural network weights are not included. Export them with the upstream
 project, then run the ONNX graph with this package.

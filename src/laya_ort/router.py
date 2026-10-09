@@ -1,4 +1,4 @@
-"""按文字在三张 ONNX 图之间选择检查点。检测逻辑来自 laya-mlx。"""
+"""按文字在三张 ONNX 图之间选择检查点。"""
 
 import os
 import threading

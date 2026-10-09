@@ -1,4 +1,4 @@
-# Derived from Laya (Apache-2.0); see NOTICE. Modified for laya-mlx.
+# Derived from Laya (Apache-2.0); see NOTICE.
 """Dependency-free language/script detection used to route between Laya checkpoints.
 
 Routing only needs one decision: *is this English Latin text, or is it something the English
